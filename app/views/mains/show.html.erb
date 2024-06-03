@@ -1,0 +1,16 @@
+<%
+=begin%>
+ <p style="color: green"><%= notice %></p> 
+<%
+=end%>
+
+<%= render @main %>
+
+
+<div>
+  <%= link_to "Edit this Friend", edit_main_path(@main), class: "btn btn-warning" %> |
+  <%= link_to "Back to List", mains_path, class: "btn btn-success" %>
+
+  <br/><br/>
+  <%= button_to "Destroy this Friend", @main, method: :delete, class: "btn btn-danger" %>
+</div>

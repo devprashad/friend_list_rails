@@ -1,0 +1,24 @@
+<div id="<%= dom_id(main) %>">
+  <table class = 'table table-stripped table-bordered table-hover'>
+    <thead class = "thead-dark">
+      <tr>
+        <th><strong>Name:</strong></th>
+        <th><strong>Email:</strong></th>
+        <th><strong>Phone:</strong></th>
+        <th><strong>Twitter:</strong></th>
+        <th><strong>User id<strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+        <%= link_to main.firstname + ' ' + main.lastname,main %>
+        </td>
+        <td><%= main.email %></td>
+        <td><%= main.phone %></td>
+        <td><%= main.twitter %></td>
+        <td><%= main.user_id %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,41 @@
+<%= form_with(model: main) do |form| %>
+  <% if main.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(main.errors.count, "error") %> prohibited this main from being saved:</h2>
+
+      <ul>
+        <% main.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class = "field form-group">
+    <%= form.text_field :firstname,class:"form-control  form-control-sm",placeholder:"Firstname"%>
+  </div>
+  <br/>
+
+  <div class = "form-group">
+    <%= form.text_field :lastname,class:"form-control  form-control-sm",placeholder:"Lastname" %>
+  </div>
+<br/>
+  <div class = "form-group">
+    <%= form.text_field :email,class:"form-control  form-control-sm",placeholder:"MailId" %>
+  </div>
+<br/>
+  <div class= "form-group">
+    <%= form.text_field :phone,class:"form-control  form-control-sm",placeholder:"Phone Number" %>
+  </div>
+<br/>
+  <div class = "form-group">
+    <%= form.text_field :twitter,class:"form-control  form-control-sm",placeholder:"Twitterid" %>
+  </div>
+<br/>
+  <div class = "form-group">
+    <%= form.number_field :user_id,id: :main_user_id,class:"form-control  form-control-sm",value:current_user.id,type: :hidden%>
+  </div>
+  <div>
+    <%= form.submit "Create Friend" ,class: "btn btn-success" %>
+  </div>
+<% end %>
