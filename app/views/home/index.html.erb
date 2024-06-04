@@ -1,2 +1,12 @@
-<h1>Home#index</h1>
-<p>heyy hello</p>
+<% if user_signed_in? %>
+  <h1>Welcome, <%= current_user.email %>!</h1>
+  <p>Welcome to the Friend List application. Here you can manage your contacts efficiently.</p>
+  <p>Use the navigation menu to add new friends, view your contact list, or edit your profile.</p>
+  <%= link_to "View Your Friends", mains_path, class: "btn btn-primary" %>
+<% else %>
+  <h1>Welcome to Friend List</h1>
+  <p>A simple and intuitive way to manage your contacts.</p>
+  <p>Sign up or log in to start using the application.</p>
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success" %>
+  <%= link_to "Log In", new_user_session_path, class: "btn btn-primary" %>
+<% end %>
