@@ -57,12 +57,12 @@ To set up the Friend List Rails Application on your local machine, follow these 
 ### Adding a New Friend
 
 - Sign up or log in to your account.
-- Click on "New Friend" to add a new friend.
-- Fill in the details and submit the form.
+- Click on "Add Friend" to add a new friend.
+- Fill in the details and submit the form by clicking "Create Friend".
 
 ### Viewing a Friend
 
-- On the friends list page, click the "Show" button next to a friend to view detailed information.
+- On the friends list page, click the name of your friend to view detailed information.
 - On the show page, you will see the details along with buttons to edit or delete the friend.
 
 ### Editing or Deleting a Friend
