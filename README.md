@@ -18,7 +18,6 @@ Welcome to the Friend List Rails Application! This application allows users to m
 - **Rails**: The web application framework used for building the application.
 - **Bootstrap**: The front-end framework used for styling and layout.
 - **SQLite**: The default database used for development.
-- **RSpec**: The testing framework used for writing tests.
 
 ## Setup Instructions
 
