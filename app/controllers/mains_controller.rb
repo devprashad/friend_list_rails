@@ -28,7 +28,7 @@ class MainsController < ApplicationController
 
     respond_to do |format|
       if @main.save
-        format.html { redirect_to main_url(@main), notice: "Main was successfully created." }
+        format.html { redirect_to main_url(@main), notice: "Your Friend details was successfully created." }
         format.json { render :show, status: :created, location: @main }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -41,7 +41,7 @@ class MainsController < ApplicationController
   def update
     respond_to do |format|
       if @main.update(main_params)
-        format.html { redirect_to main_url(@main), notice: "Main was successfully updated." }
+        format.html { redirect_to main_url(@main), notice: "Your Friend details was successfully updated." }
         format.json { render :show, status: :ok, location: @main }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -55,7 +55,7 @@ class MainsController < ApplicationController
     @main.destroy!
 
     respond_to do |format|
-      format.html { redirect_to mains_url, notice: "Main was successfully destroyed." }
+      format.html { redirect_to mains_url, notice: "Your Friend details was successfully destroyed." }
       format.json { head :no_content }
     end
   end
